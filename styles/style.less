@@ -2,3 +2,69 @@
 @veryDarkDesaturatedBlue: hsl(229, 23%, 23%);
 @darkGrayishBlue: hsl(227, 10%, 46%);
 @darkGray: hsl(0, 0%, 59%);
+
+html, body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    position: relative;
+    font-family: 'Kumbh Sans', sans-serif;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    
+}
+.profile-card__container{
+    background-color: red;
+    text-align: center;
+    
+    position: relative;
+    
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 380px;
+    width: 325px;
+    margin: 0;
+    border-radius: 20px;
+    overflow: hidden;
+    .user__name-age{
+        position: absolute;
+        top: 56%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        width: 100%;
+        font-size: 18px;
+        span{
+            font-weight: 400;
+        }
+    }
+    .user__location{
+        position: absolute;
+        top: 64%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        font-size: 14px;
+        font-weight: 400;
+    }
+    .break-line{
+        position: absolute;
+        top: 74%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        width: 100%;
+    }
+}
+
+.features__container{
+    display: flex;
+}
+
+.user__photo img{
+    position: absolute;
+    top: 38%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border-radius: 50%;
+    width: 100px;
+}
