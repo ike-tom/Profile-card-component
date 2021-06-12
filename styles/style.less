@@ -23,8 +23,6 @@ html, body{
     }
 }
 .profile-card__container{    
-    background-color: white;
-    text-align: center;    
     position: relative;    
     top: 50%;
     left: 50%;
@@ -32,11 +30,32 @@ html, body{
     height: 380px;
     width: 260px;
     margin: 0;
+    background-color: white;
+    text-align: center;    
     border-radius: 20px;
     overflow: hidden;
     @media (min-width: 360px){
         width: 325px;
     }      
+    .user-background-photo{
+        position: absolute;
+        height: 38%;
+        width: 100%;
+        background-image: url(../images/bg-pattern-card.svg);
+        background-color: @darkCyan;
+        background-repeat: no-repeat;
+        background-size: cover;    
+    }
+    .user__photo .profile__photo{
+        position: absolute;
+        top: 38%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        width: 100px;
+        background-color: white;    
+        border: 4px solid white;
+        border-radius: 50%;
+    }
     .user__name-age{
         position: absolute;
         top: 56%;
@@ -45,7 +64,7 @@ html, body{
         width: 100%;
         font-size: 18px;
         color: @veryDarkDesaturatedBlue;
-        span{
+        .user__age{
             font-weight: 400;
             color: @darkGray;
         }
@@ -67,54 +86,29 @@ html, body{
         width: 100%;
         border-color: @darkGrayishBlue;
     }
-}
-
-.features__container{
-    display: flex;
-    align-items: flex-end;
-    height: 100%;
-    width: 85%;
-    margin: 0 auto;
-    
-    .feature__container{
-        flex-grow: 1;        
-        flex-basis: 25%;
-        margin-bottom: 1rem;
-        justify-content: space-evenly;
+    .features__container{
+        display: flex;
+        align-items: flex-end;
+        height: 100%;
+        width: 85%;
+        margin: 0 auto;
         
-        .feature__ammount{
-            font-weight: 700;
-            font-size: 17px;
-            color: @veryDarkDesaturatedBlue;
-        }
-        .feature__description{
-            font-weight: 400;
-            font-size: 10px;
-            letter-spacing: 2px;
-            color: @darkGrayishBlue;
+        .feature__container{
+            flex-grow: 1;        
+            flex-basis: 25%;
+            margin-bottom: 1rem;
+            justify-content: space-evenly;        
+            .feature__ammount{
+                font-weight: 700;
+                font-size: 17px;
+                color: @veryDarkDesaturatedBlue;
+            }
+            .feature__description{
+                font-size: 10px;
+                font-weight: 400;
+                letter-spacing: 2px;
+                color: @darkGrayishBlue;
+            }
         }
     }
-}
-
-.user-background-photo{
-    position: absolute;
-    background-image: url(../images/bg-pattern-card.svg);
-    height: 38%;
-    width: 100%;
-    background-color: @darkCyan;
-    background-repeat: no-repeat;
-    background-size: cover;
-    
-}
-
-.user__photo img{
-    position: absolute;
-    top: 38%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    border-radius: 50%;
-    width: 100px;
-    border: 4px solid white;
-    background-color: white;
-    
 }
