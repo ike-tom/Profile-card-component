@@ -15,11 +15,9 @@ html, body{
     
 }
 .profile-card__container{
-    background-color: red;
-    text-align: center;
-    
-    position: relative;
-    
+    background-color: goldenrod;
+    text-align: center;    
+    position: relative;    
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -35,8 +33,10 @@ html, body{
         transform: translate(-50%,-50%);
         width: 100%;
         font-size: 18px;
+        color: @veryDarkDesaturatedBlue;
         span{
             font-weight: 400;
+            color: @darkGray;
         }
     }
     .user__location{
@@ -46,6 +46,7 @@ html, body{
         transform: translate(-50%,-50%);
         font-size: 14px;
         font-weight: 400;
+        color: @darkGray;
     }
     .break-line{
         position: absolute;
@@ -53,11 +54,44 @@ html, body{
         left: 50%;
         transform: translate(-50%,-50%);
         width: 100%;
+        border-color: @darkGrayishBlue;
     }
 }
 
+
+
 .features__container{
     display: flex;
+    align-items: flex-end;
+    height: 100%;
+    width: 85%;
+    margin: 0 auto;
+    
+    .feature__container{
+        flex-grow: 1;        
+        flex-basis: 25%;
+        margin-bottom: 1rem;
+        justify-content: space-evenly;
+        
+        .feature__ammount{
+            font-weight: 700;
+            font-size: 17px;
+            color: @veryDarkDesaturatedBlue;
+        }
+        .feature__description{
+            font-weight: 400;
+            font-size: 10px;
+            letter-spacing: 2px;
+            color: @darkGrayishBlue;
+        }
+    }
+}
+
+.user-background-photo{
+    position: absolute;
+    background-image: url(../images/bg-pattern-card.svg);
+    height: 38%;
+    width: 100%;
 }
 
 .user__photo img{
@@ -67,4 +101,5 @@ html, body{
     transform: translate(-50%,-50%);
     border-radius: 50%;
     width: 100px;
+    border: 4px solid white;
 }
