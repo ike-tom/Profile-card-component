@@ -4,16 +4,23 @@
 @darkGray: hsl(0, 0%, 59%);
 
 html, body{
+    position: relative;
+    height: 100vh;
+    width: 100vw;    
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    position: relative;
     font-family: 'Kumbh Sans', sans-serif;
-    height: 100vh;
-    width: 100vw;
-    
     background-color: @darkCyan;
-    
+    background-image: url("../images/bg-pattern-bottom.svg"), url("../images/bg-pattern-top.svg");    
+    background-position: -25% -95%, 125% 197%;    
+    background-repeat: no-repeat;
+    @media (min-width: 768px){
+        background-position: 416px 589px, -498px -555px;
+    } 
+    @media (min-width: 1025px){
+        background-position: 700px 350px, -298px -555px;
+    }
 }
 .profile-card__container{    
     background-color: white;
