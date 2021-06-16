@@ -11,6 +11,7 @@ This is a solution to the [Profile card component challenge on Frontend Mentor](
 ### Links
 
 - Solution URL: https://github.com/ike-tom/Profile-card-component
+- Live URL https://profile-card-component-alpha-lyart.vercel.app/
 
 ### Built with
 
